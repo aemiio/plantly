@@ -6,5 +6,5 @@ module.exports = {
     "prettier/prettier": "error",
     "react-native/no-unused-styles": "error",
   },
-  ignorePatterns: ["/dist/*"],
+  ignorePatterns: ["/dist/*", "@/"],
 };
