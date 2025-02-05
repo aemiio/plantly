@@ -3,7 +3,7 @@ import { StyleSheet, Text, Pressable, Platform } from "react-native";
 import * as Haptics from "expo-haptics";
 
 type Props = {
-  title: String;
+  title: string;
   onPress: () => void;
 };
 
@@ -31,9 +31,10 @@ export function PlantlyButton({ title, onPress }: Props) {
 
 const styles = StyleSheet.create({
   text: {
-    color: theme.colorWhite,
+    color: "#fff",
     fontSize: 18,
     fontWeight: "bold",
+    justifyContent: "center",
   },
   button: {
     paddingHorizontal: 18,
