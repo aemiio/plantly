@@ -1,6 +1,6 @@
 import { View, StyleSheet, Button } from "react-native";
 import { theme } from "@/theme";
-import { useUserStore } from "../store/userStore";
+import { useUserStore } from "../../store/userStore";
 
 export default function ProfileScreen() {
   const toggleHasOnboarded = useUserStore((store) => store.toggleHasOnboarded);
