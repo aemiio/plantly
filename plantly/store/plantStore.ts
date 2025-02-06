@@ -20,7 +20,7 @@ type PlantState = {
     imageUri: string,
   ) => Promise<void>;
   removePlant: (plantId: string) => void;
-  wwaterPlant: (plantId: string) => void;
+  waterPlant: (plantId: string) => void;
 };
 
 export const usePlantStore = create(
@@ -68,7 +68,7 @@ export const usePlantStore = create(
           };
         });
       },
-      wwaterPlant: (plantId: string) => {
+      waterPlant: (plantId: string) => {
         return set((state) => {
           return {
             ...state,
